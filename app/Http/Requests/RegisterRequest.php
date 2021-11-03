@@ -36,6 +36,7 @@ class RegisterRequest extends FormRequest
     {
         return [
             'nama.required' => 'Nama tidak boleh kosong',
+            'alamat.required' => 'Alamat tidak boleh kosong',
             'tempat_lahir.required' => 'Tempat lahir tidak boleh kosong',
             'tanggal_lahir.required' => 'Tanggal lahir tidak boleh kosong',
             'pendidikan_terakhir.required' => 'Pendidikan terakhir tidak boleh kosong',
