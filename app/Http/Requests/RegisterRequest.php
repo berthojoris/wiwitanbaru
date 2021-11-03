@@ -27,8 +27,8 @@ class RegisterRequest extends FormRequest
             'alamat' => 'required',
             'email' => 'required|email',
             'konfirmasi' => 'required',
-            'scan_ijazah' => 'required|file',
-            'essay' => 'required|file'
+            'scan_ijazah' => 'required|file|mimes:pdf|max:20480', // 20 mb
+            'essay' => 'required|file|mimes:doc,docx|max:20480' // 20 mb
         ];
     }
 
@@ -46,6 +46,10 @@ class RegisterRequest extends FormRequest
             'konfirmasi.required' => 'Konfirmasi pelatihan tidak boleh kosong',
             'scan_ijazah.required' => 'Scan ijazah belum diunggah',
             'essay.required' => 'Essay belum diunggah',
+            'essay.mimes' => 'Essay hanya diijinkan file *.doc atau *.docx',
+            'scan_ijazah.mimes' => 'Essay hanya diijinkan file *.pdf',
+            'essay.max' => 'Ukuran file essay hanya diijinkan tidak lebih dari 20mb',
+            'scan_ijazah.max' => 'Ukuran file ijazah/rapor hanya diijinkan tidak lebih dari 20mb',
         ];
     }
 }
