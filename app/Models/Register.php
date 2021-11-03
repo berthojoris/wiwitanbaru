@@ -12,9 +12,14 @@ class Register extends Model
 
     protected $guarded = ['id'];
 
-    protected $casts = [
-        'tanggal_lahir'  => 'date:d-m-Y',
-    ];
+    // protected $casts = [
+    //     'tanggal_lahir' => 'date:d-m-Y',
+    // ];
+
+    public function getTanggalLahirAttribute($value)
+    {
+        return date("d-m-Y", strtotime($value));
+    }
 
     protected static function boot()
     {
