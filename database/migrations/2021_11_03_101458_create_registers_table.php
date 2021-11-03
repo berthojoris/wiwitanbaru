@@ -15,6 +15,18 @@ class CreateRegistersTable extends Migration
     {
         Schema::create('registers', function (Blueprint $table) {
             $table->id();
+            $table->uuid('uuid');
+            $table->string('nama');
+            $table->string('tempat_lahir');
+            $table->date('tanggal_lahir');
+            $table->string('golongan_darah');
+            $table->text('alamat');
+            $table->string('pendidikan_terakhir');
+            $table->string('nomor_telp');
+            $table->string('email');
+            $table->string('konfirmasi');
+            $table->string('scan_ijazah');
+            $table->string('essay');
             $table->timestamps();
         });
     }

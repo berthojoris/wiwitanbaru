@@ -13,5 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'RegisterController@index')->name('register_index');
+Route::get('/', 'RegisterController@index')->name('index');
 Route::post('/register', 'RegisterController@submit')->name('register_submit');
