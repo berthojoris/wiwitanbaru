@@ -12,7 +12,7 @@
 @section('content')
 <form method="POST" action="{{ route('register_submit') }}" enctype="multipart/form-data" class="sky-form">
     @csrf
-    <header>Gratis Pelatihan Bahasa Jepang Tanpa Potongan Setelah Bekerja <br> <h4 class="noted">Formulir calon peserta magang Angkatan 3 LPK WIWITAN BARU SUKABUMI khusus SMK/D3/S1 KEPERAWATAN dan KEBIDANAN</h4></header>
+    <header>Gratiss Pelatihan Bahasa Jepang Tanpa Potongan Setelah Bekerja <br> <h4 class="noted">Formulir calon peserta magang Angkatan 3 LPK WIWITAN BARU SUKABUMI khusus SMK/D3/S1 KEPERAWATAN dan KEBIDANAN</h4></header>
 
     <fieldset>
 
