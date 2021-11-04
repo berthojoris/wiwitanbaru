@@ -23,7 +23,7 @@
                     <li><a href="#program" class="">Program</a></li>
                     <li><a href="#message" class="">Kontak</a></li>
                     <!--<li><a href="https://goo.gl/forms/OV15IF1z4sinfmkj1" class="">Registrasi</a></li>-->
-                    <li><a href="http://registrasi.wiwitanbaru.com/" class="" target="_blank">Registrasi</a></li>
+                    <li><a href="https://www.registration.wiwitanbaru.com/" class="" target="_blank">Registrasi</a></li>
                     <li class="langflag">
                         <div>
                             <a href="{{ route('change_lang', 'id') }}" style="border: 0.3px black solid" class="flag-icon flag-icon-id"></a>&nbsp
