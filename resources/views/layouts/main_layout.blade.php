@@ -5,25 +5,16 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-        <?php
-            if (isset($_GET['lang'])) {
-                    $lang = $_GET['lang'];
-                } else {
-                    $lang = "";
-                }
-            if($lang == "jp"){
-        ?>
-            <title>ウィウィタン・バル</title>
-        <?php
-            }else{
-        ?>
-            <title>Wiwitan Baru</title>
-        <?php
+        @php
+            if(empty(session('lang'))) {
+                echo "<title>Wiwitan Baru</title>";
+            } else if(session('lang') == 'jp') {
+                echo "<title>ウィウィタン・バル</title>";
+            } else {
+                echo "<title>Wiwitan Baru</title>";
             }
-        ?>
-
+        @endphp
 
         <link href="{{ asset('template/main/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
         <script type="text/javascript" src="{{ asset('template/main/js/bootstrap.js') }}"></script>
@@ -62,7 +53,7 @@
     <body>
         @yield('content')
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="{{ asset('template/main/js/jquery/jquery.js') }}"></script>
+        <script src="{{ asset('js/jquery-1.12.4.min.js') }}"></script>
 
         <script src="{{ asset('template/main/js/script.js') }}"></script>
 
@@ -72,9 +63,9 @@
         <script src="{{ asset('template/main/js/fancybox/jquery.fancybox.pack.js') }}"></script>
         <script src="{{ asset('template/main/js/nivo-lightbox/nivo-lightbox.min.js') }}"></script>
         <script src="{{ asset('template/main/js/owl-carousel/owl.carousel.min.js') }}"></script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL6gbhsnCEt4FS9D6BBl3mZO1xy-NcwpE&sensor=false"></script>
         <script src="{{ asset('template/main/js/jquery-easing/jquery.easing.1.3.js') }}"></script>
         <script src="{{ asset('template/main/js/superslide/jquery.superslides.js') }}"></script>
         <script src="{{ asset('template/main/js/wow/wow.min.js') }}"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL6gbhsnCEt4FS9D6BBl3mZO1xy-NcwpE&sensor=false"></script>
     </body>
 </html>
