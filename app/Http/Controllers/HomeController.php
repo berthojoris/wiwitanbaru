@@ -21,7 +21,16 @@ class HomeController extends Controller
 
     public function changeLanguage($lang)
     {
-        session(['lang' => $lang]);
+        $langValidation = [
+            'en',
+            'id',
+            'jp'
+        ];
+
+        if (in_array(trim($lang), $langValidation)) {
+            session(['lang' => $lang]);
+        }
+
         return redirect()->route('index');
     }
 }
