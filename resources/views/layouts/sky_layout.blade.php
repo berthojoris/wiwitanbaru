@@ -8,7 +8,8 @@
         <link href="{{ asset('template/css/demo.css') }}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('template/css/sky-forms.css') }}" rel="stylesheet" type="text/css" />
         <link href="{{ asset('template/css/sky-forms-blue.css') }}" rel="stylesheet" type="text/css" />
-        <link rel="shortcut icon" href="{{ asset('template/icons/favicon.ico') }}">
+        <link rel="icon" href="{{ asset('template/main/favicon.ico') }}" type="image/png">
+        <link rel="shortcut icon" href="{{ asset('template/main/favicon.ico') }}" type="img/x-icon">
         @stack('library_css')
         @stack('page_css')
 		<!--[if lt IE 9]>
