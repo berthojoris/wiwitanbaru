@@ -91,6 +91,6 @@ class RegisterController extends Controller
 
         Register::create($data);
 
-        return redirect()->route('index')->with('message', 'Data anda berhasil dikirim dan akan segera kami proses. Terima kasih');
+        return redirect()->route('register_index')->with('message', 'Data anda berhasil dikirim dan akan segera kami proses. Terima kasih');
     }
 }

@@ -18,4 +18,5 @@ Route::get('/lang/{lang}', 'HomeController@changeLanguage')->name('change_lang')
 Route::get('/admin/view', 'RegisterController@viewDb')->name('view_data');
 Route::get('/admin/download-ijazah/{fileName}', 'RegisterController@downloadIjazah')->name('download_ijazah');
 Route::get('/admin/download-essay/{fileName}', 'RegisterController@downloadEssay')->name('download_essay');
-Route::post('/register', 'RegisterController@submit')->name('register_submit');
+Route::get('/register', 'RegisterController@index')->name('register_index');
+Route::post('/register/proses', 'RegisterController@submit')->name('register_submit');
