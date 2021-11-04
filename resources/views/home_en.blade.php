@@ -20,7 +20,7 @@
                     <li><a href="#works" class="menuLinks">About</a></li>
                     <li><a href="#program" class="menuLinks">Program</a></li>
                     <li><a href="#message" class="menuLinks">Contact</a></li>
-                    <li><a href="https://www.registration.wiwitanbaru.com/" target="_blank">Registration</a></li>
+                    <li><a href="{{ route('register_index') }}" target="_blank">Registration</a></li>
                     <li class="langflag">
                         <div>
                             <a href="{{ route('change_lang', 'id') }}" style="border: 0.3px black solid" class="flag-icon flag-icon-id"></a>&nbsp
