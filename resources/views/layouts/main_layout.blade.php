@@ -17,7 +17,7 @@
         @endphp
 
         <link href="{{ asset('template/main/css/bootstrap.css') }}" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="{{ asset('template/main/js/bootstrap.js') }}"></script>
+
 
         <link rel="icon" href="{{ asset('template/main/favicon.ico') }}" type="image/png">
         <link rel="shortcut icon" href="{{ asset('template/main/favicon.ico') }}" type="img/x-icon">
@@ -66,6 +66,6 @@
         <script src="{{ asset('template/main/js/jquery-easing/jquery.easing.1.3.js') }}"></script>
         <script src="{{ asset('template/main/js/superslide/jquery.superslides.js') }}"></script>
         <script src="{{ asset('template/main/js/wow/wow.min.js') }}"></script>
-        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL6gbhsnCEt4FS9D6BBl3mZO1xy-NcwpE&sensor=false"></script>
+        {{-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBL6gbhsnCEt4FS9D6BBl3mZO1xy-NcwpE&sensor=false"></script> --}}
     </body>
 </html>
