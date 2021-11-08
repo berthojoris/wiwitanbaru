@@ -22,11 +22,17 @@ $(document).ready(function() {
             viewportheight = document.getElementsByTagName('body')[0].clientHeight
     }
 
-
     if (viewportwidth < 768) {
-        $(".langflag").hide();
+        // $(".langflag").hide();
 
-        $(".navbar-header").append("<div class=\"langflagnew\"><a href=\"#\" onclick=\"changeLang(\'in\')\" style=\"border: 0.3px black solid\" class=\"flag-icon flag-icon-id\"></a>&nbsp<a href=\"#\" onclick=\"changeLang(\'en\')\" style=\"border: 0.3px black solid\" class=\"flag-icon flag-icon-us\"></a>&nbsp<a href=\"#\" onclick=\"changeLang(\'jp\')\" style=\"border: 0.3px black solid\" class=\"flag-icon flag-icon-jp\"></a></div>");
+        // $(".navbar-header").append("<div class=\"langflagnew\"><a href=\"#\" onclick=\"changeLang(\'in\')\" style=\"border: 0.3px black solid\" class=\"flag-icon flag-icon-id\"></a>&nbsp<a href=\"#\" onclick=\"changeLang(\'en\')\" style=\"border: 0.3px black solid\" class=\"flag-icon flag-icon-us\"></a>&nbsp<a href=\"#\" onclick=\"changeLang(\'jp\')\" style=\"border: 0.3px black solid\" class=\"flag-icon flag-icon-jp\"></a></div>");
+
+        $('.navbar-header').append('\
+        <div class="langflagnew">\
+            <a href="' + route('change_lang', 'id') + '" style="border: 0.3px black solid" class="flag-icon flag-icon-id"></a>&nbsp\
+            <a href="' + route('change_lang', 'en') + '" style="border: 0.3px black solid" class="flag-icon flag-icon-us"></a>&nbsp\
+            <a href="' + route('change_lang', 'jp') + '" style="border: 0.3px black solid" class="flag-icon flag-icon-jp"></a>\
+        </div>');
     }
 });
 
