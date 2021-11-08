@@ -62,7 +62,7 @@ a:hover {
 }
 
 .bg-japan {
-    background-image: url(../img/header_form.jpg);
+    background-image: url(../img/bg.jpg);
 }
 
 @media screen and (max-width: 600px) {
