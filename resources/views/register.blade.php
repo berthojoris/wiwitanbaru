@@ -37,21 +37,21 @@
         <section>
             <label class="label">Nama lengkap <span class="requirement">*</span></label>
             <label class="input">
-                <input type="text" name="nama" id="nama" autocomplete="off">
+                <input type="text" name="nama" id="nama" autocomplete="off" value="{{ old('nama') }}">
             </label>
         </section>
 
         <section>
             <label class="label">Tempat lahir <span class="requirement">*</span></label>
             <label class="input">
-                <input type="text" name="tempat_lahir" id="tempat_lahir" autocomplete="off">
+                <input type="text" name="tempat_lahir" id="tempat_lahir" autocomplete="off" value="{{ old('tempat_lahir') }}">
             </label>
         </section>
 
         <section>
             <label class="label">Tanggal lahir <span class="requirement">*</span></label>
             <label class="input">
-                <input type="text" name="tanggal_lahir" id="tanggal_lahir" autocomplete="off">
+                <input type="text" name="tanggal_lahir" id="tanggal_lahir" autocomplete="off" value="{{ old('tanggal_lahir') }}">
             </label>
         </section>
 
@@ -70,7 +70,7 @@
         <section>
             <label class="label">Alamat lengkap <span class="requirement">*</span></label>
             <label class="textarea">
-                <textarea rows="3" id="alamat" name="alamat"></textarea>
+                <textarea rows="3" id="alamat" name="alamat">{{ old('alamat') }}</textarea>
             </label>
             <div class="note"><strong>Note:</strong> masukan alamat anda dengan lengkap.</div>
         </section>
@@ -89,14 +89,14 @@
         <section>
             <label class="label">Nomor yang dapat dihubungi <span class="requirement">*</span></label>
             <label class="input">
-                <input type="number" name="nomor_telp" id="nomor_telp" autocomplete="off">
+                <input type="number" name="nomor_telp" id="nomor_telp" autocomplete="off" value="{{ old('nomor_telp') }}">
             </label>
         </section>
 
         <section>
             <label class="label">Alamat email aktif <span class="requirement">*</span></label>
             <label class="input">
-                <input type="text" name="email" id="email" autocomplete="off">
+                <input type="text" name="email" id="email" autocomplete="off" value="{{ old('email') }}">
             </label>
         </section>
 
@@ -110,7 +110,7 @@
             </div>
         </section>
 
-        <section>
+        {{-- <section>
             <label class="label">Unggah scan Raport/Ijazah <span class="requirement">*</span></label>
             <label for="file" class="input input-file">
                 <div class="button"><input type="file" id="scan_ijazah" name="scan_ijazah" onchange="this.parentNode.nextSibling.value = this.value">Browse</div><input type="text" readonly>
@@ -124,7 +124,7 @@
                 <div class="button"><input type="file" id="essay" name="essay" onchange="this.parentNode.nextSibling.value = this.value">Browse</div><input type="text" readonly>
             </label>
             <div class="note"><strong>Note:</strong> Unggah essai dalam format Microsoft Word.</div>
-        </section>
+        </section> --}}
 
     </fieldset>
 

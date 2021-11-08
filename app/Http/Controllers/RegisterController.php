@@ -69,25 +69,25 @@ class RegisterController extends Controller
         $data['email'] = strtolower($request->email);
         $data['konfirmasi'] = strtoupper($request->konfirmasi);
 
-        if($request->hasFile('scan_ijazah')) {
-            $file = $request->file('scan_ijazah');
-            $randomName = Str::random(20) . '.' . $file->getClientOriginalExtension();
-            $destinationPath = public_path('uploads/ijazah/');
-            $file->move($destinationPath, $randomName);
-            $data['scan_ijazah'] = $randomName;
-        } else {
-            $data['scan_ijazah'] = 'no_file.png';
-        }
+        // if($request->hasFile('scan_ijazah')) {
+        //     $file = $request->file('scan_ijazah');
+        //     $randomName = Str::random(20) . '.' . $file->getClientOriginalExtension();
+        //     $destinationPath = public_path('uploads/ijazah/');
+        //     $file->move($destinationPath, $randomName);
+        //     $data['scan_ijazah'] = $randomName;
+        // } else {
+        //     $data['scan_ijazah'] = 'no_file.png';
+        // }
 
-        if($request->hasFile('essay')) {
-            $file = $request->file('essay');
-            $randomName = Str::random(20) . '.' . $file->getClientOriginalExtension();
-            $destinationPath = public_path('uploads/essay/');
-            $file->move($destinationPath, $randomName);
-            $data['essay'] = $randomName;
-        } else {
-            $data['essay'] = 'no_file.png';
-        }
+        // if($request->hasFile('essay')) {
+        //     $file = $request->file('essay');
+        //     $randomName = Str::random(20) . '.' . $file->getClientOriginalExtension();
+        //     $destinationPath = public_path('uploads/essay/');
+        //     $file->move($destinationPath, $randomName);
+        //     $data['essay'] = $randomName;
+        // } else {
+        //     $data['essay'] = 'no_file.png';
+        // }
 
         Register::create($data);
 

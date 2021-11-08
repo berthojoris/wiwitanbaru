@@ -25,8 +25,8 @@ class CreateRegistersTable extends Migration
             $table->string('nomor_telp');
             $table->string('email');
             $table->string('konfirmasi');
-            $table->string('scan_ijazah');
-            $table->string('essay');
+            $table->string('scan_ijazah')->nullable();
+            $table->string('essay')->nullable();
             $table->timestamps();
         });
     }
