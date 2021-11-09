@@ -76,7 +76,7 @@
         </section>
 
         <section>
-            <label class="label">Pendidikan Terakhir <span class="requirement">*</span></label>
+            <label class="label">Pendidikan terakhir Keperawatan/Kebidanan <span class="requirement">*</span></label>
             <div class="row">
                 <div class="col col-4">
                     <label class="radio"><input type="radio" name="pendidikan_terakhir" value="SMA/SMK"><i></i>SMA/SMK</label>

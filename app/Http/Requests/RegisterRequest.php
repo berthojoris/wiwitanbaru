@@ -42,7 +42,7 @@ class RegisterRequest extends FormRequest
             'tempat_lahir.max' => 'Nama tidak boleh lebih dari 255 karakter',
             'tanggal_lahir.required' => 'Tanggal lahir tidak boleh kosong',
             'tanggal_lahir.date' => 'Format tanggal lahir salah. Contoh : 01-12-1980',
-            'pendidikan_terakhir.required' => 'Pendidikan terakhir tidak boleh kosong',
+            'pendidikan_terakhir.required' => 'Pendidikan terakhir keperawatan/kebidanan tidak boleh kosong',
             'nomor_telp.required' => 'Nomor yg dapat dihubungi tidak boleh kosong',
             'email.required' => 'Email tidak boleh kosong',
             'email.email' => 'Format email salah. Contoh : andi@gmail.com',
