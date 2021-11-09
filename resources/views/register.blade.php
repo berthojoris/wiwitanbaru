@@ -125,10 +125,10 @@
             </label>
             <div class="note"><strong>Note:</strong> Unggah essai dalam format Microsoft Word.</div>
         </section> --}}
-
     </fieldset>
 
     <footer>
+        <span id="info" style="font-size: 14px;">Call Centre | Whatsapp Centre Wiwitan Baru : <a href="https://wa.me/6281322892158?text=Hai%2C%20saya%20ingin%20mengetahui%20tetang%20wiwitan%20baru" target="_blank">081322892158</a></span>
         <input type="submit" value="Submit" class="button">
     </footer>
 </form>
