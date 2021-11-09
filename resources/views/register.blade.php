@@ -59,10 +59,10 @@
             <label class="label">Golongan darah</label>
             <div class="row">
                 <div class="col col-4">
-                    <label class="radio"><input type="radio" name="golongan_darah" value="O"><i></i>O</label>
-                    <label class="radio"><input type="radio" name="golongan_darah" value="A"><i></i>A</label>
-                    <label class="radio"><input type="radio" name="golongan_darah" value="B"><i></i>B</label>
-                    <label class="radio"><input type="radio" name="golongan_darah" value="AB"><i></i>AB</label>
+                    <label class="radio"><input type="radio" name="golongan_darah" value="O" @if(old('golongan_darah') == 'O') checked @endif><i></i>O</label>
+                    <label class="radio"><input type="radio" name="golongan_darah" value="A" @if(old('golongan_darah') == 'A') checked @endif><i></i>A</label>
+                    <label class="radio"><input type="radio" name="golongan_darah" value="B" @if(old('golongan_darah') == 'B') checked @endif><i></i>B</label>
+                    <label class="radio"><input type="radio" name="golongan_darah" value="AB" @if(old('golongan_darah') == 'AB') checked @endif><i></i>AB</label>
                 </div>
             </div>
         </section>
@@ -79,9 +79,9 @@
             <label class="label">Pendidikan terakhir Keperawatan/Kebidanan <span class="requirement">*</span></label>
             <div class="row">
                 <div class="col col-4">
-                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="SMA/SMK"><i></i>SMA/SMK</label>
-                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="D3"><i></i>D3</label>
-                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="S1"><i></i>S1</label>
+                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="SMA/SMK" @if(old('pendidikan_terakhir') == 'SMA/SMK') checked @endif><i></i>SMA/SMK</label>
+                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="D3" @if(old('pendidikan_terakhir') == 'D3') checked @endif><i></i>D3</label>
+                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="S1" @if(old('pendidikan_terakhir') == 'S1') checked @endif><i></i>S1</label>
                 </div>
             </div>
         </section>
@@ -104,8 +104,8 @@
             <label class="label">Apakah anda bersedia mengikuti Pelatihan selama 6 bulan? <span class="requirement">*</span></label>
             <div class="row">
                 <div class="col col-4">
-                    <label class="radio"><input type="radio" name="konfirmasi" value="Ya"><i></i>Ya</label>
-                    <label class="radio"><input type="radio" name="konfirmasi" value="Tidak"><i></i>Tidak</label>
+                    <label class="radio"><input type="radio" name="konfirmasi" value="Ya" @if(old('konfirmasi') == 'Ya') checked @endif><i></i>Ya</label>
+                    <label class="radio"><input type="radio" name="konfirmasi" value="Tidak" @if(old('konfirmasi') == 'Tidak') checked @endif><i></i>Tidak</label>
                 </div>
             </div>
         </section>
