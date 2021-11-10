@@ -24,6 +24,14 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			<script src="js/sky-forms-ie8.js"></script>
 		<![endif]-->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-212326876-1"></script>
+		<script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-212326876-1');
+        </script>
 	</head>
 	<body class="bg-japan">
 		<div class="body">

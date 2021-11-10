@@ -12,7 +12,7 @@
 @section('content')
 <form method="POST" action="{{ route('register_submit') }}" enctype="multipart/form-data" class="sky-form">
     @csrf
-    <header>Gratis Pelatihan Bahasa Jepang Tanpa Potongan Setelah Bekerja <br> <h4 class="noted">Formulir calon peserta magang Angkatan 3 LPK WIWITAN BARU SUKABUMI khusus SMK/D3/S1 KEPERAWATAN dan KEBIDANAN</h4></header>
+    <header>Registrasi Beasiswa Pelatihan Bahasa Jepang untuk jadi Perawat di Jepang dengan Gaji Besar <br> <h4 class="noted">Formulir calon peserta magang Angkatan 3 LPK WIWITAN BARU SUKABUMI khusus SMK/D3/D4/S1 KEPERAWATAN dan KEBIDANAN</h4></header>
 
     <fieldset>
 
@@ -80,7 +80,7 @@
             <div class="row">
                 <div class="col col-4">
                     <label class="radio"><input type="radio" name="pendidikan_terakhir" value="SMA/SMK" @if(old('pendidikan_terakhir') == 'SMA/SMK') checked @endif><i></i>SMA/SMK</label>
-                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="D3" @if(old('pendidikan_terakhir') == 'D3') checked @endif><i></i>D3</label>
+                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="D3/D4" @if(old('pendidikan_terakhir') == 'D3/D4') checked @endif><i></i>D3/D4</label>
                     <label class="radio"><input type="radio" name="pendidikan_terakhir" value="S1" @if(old('pendidikan_terakhir') == 'S1') checked @endif><i></i>S1</label>
                 </div>
             </div>
