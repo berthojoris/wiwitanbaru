@@ -63,7 +63,7 @@ class RegisterController extends Controller
                 return redirect()->back();
             }
         } else {
-            return redirect()->back()->withErrors(['msg' => 'Username dan password not valid']);
+            return redirect()->back()->withErrors(['msg' => 'Email and password not valid']);
         }
     }
 
