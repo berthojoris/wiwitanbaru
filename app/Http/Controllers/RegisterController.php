@@ -52,8 +52,34 @@ class RegisterController extends Controller
         }
     }
 
+    public function loginProcess(Request $request)
+    {
+        if(isset($request->email) && isset($request->password)) {
+            $email = $request->email;
+            $password = $request->password;
+
+            if($email == 'admin@wiwitanbaru.com' && $password == 'wb@2021') {
+                session()->put('user_has_login', "loggedin");
+                return redirect()->back();
+            }
+        } else {
+            return redirect()->back()->withErrors(['msg' => 'Username dan password not valid']);
+        }
+    }
+
+    public function logout()
+    {
+        session()->forget('user_has_login');
+        return redirect()->route('view_data');
+    }
+
     public function viewDb()
     {
+        // session()->forget(['user_has_login']);
+        if(empty(session('user_has_login'))) {
+            return view('admin_login');
+        }
+
         $registed_user = Register::latest()->get();
         return view('view_data', compact('registed_user'));
     }

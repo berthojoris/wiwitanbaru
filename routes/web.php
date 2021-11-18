@@ -20,3 +20,5 @@ Route::get('/admin/download-ijazah/{fileName}', 'RegisterController@downloadIjaz
 Route::get('/admin/download-essay/{fileName}', 'RegisterController@downloadEssay')->name('download_essay');
 Route::get('/register', 'RegisterController@index')->name('register_index');
 Route::post('/register/proses', 'RegisterController@submit')->name('register_submit');
+Route::post('/login/proses', 'RegisterController@loginProcess')->name('login_process');
+Route::get('/admin/logout', 'RegisterController@logout')->name('logout');
