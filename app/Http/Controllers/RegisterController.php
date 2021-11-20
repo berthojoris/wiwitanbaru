@@ -75,7 +75,6 @@ class RegisterController extends Controller
 
     public function viewDb()
     {
-        // session()->forget(['user_has_login']);
         if(empty(session('user_has_login'))) {
             return view('admin_login');
         }

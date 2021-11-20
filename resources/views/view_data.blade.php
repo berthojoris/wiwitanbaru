@@ -17,6 +17,7 @@
 <body>
 <table>
     <thead>
+        <th>No</th>
         <th>Nama</th>
         <th>Tempat Lahir</th>
         <th>Tanggal Lahir</th>
@@ -31,8 +32,9 @@
         <th>Essay</th> --}}
     </thead>
     <tbody>
-        @foreach ($registed_user as $user)
+        @foreach ($registed_user as $index => $user)
             <tr>
+                <td>{{ $index+1 }}.</td>
                 <td>{{ $user->nama }}</td>
                 <td>{{ $user->tempat_lahir }}</td>
                 <td>{{ $user->tanggal_lahir }}</td>
