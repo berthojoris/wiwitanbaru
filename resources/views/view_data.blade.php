@@ -26,6 +26,7 @@
         <th>No Telp</th>
         <th>Email</th>
         <th>Konfirmasi</th>
+        <th>Waktu Submit</th>
         {{-- <th>Ijazah/Rapor</th>
         <th>Essay</th> --}}
     </thead>
@@ -41,6 +42,7 @@
                 <td>{{ $user->nomor_telp }}</td>
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->konfirmasi }}</td>
+                <td>{{ $user->created_at }}</td>
                 {{-- <td><a href="{{ route('download_ijazah', ['fileName' => $user->scan_ijazah]) }}">Download</a></td>
                 <td><a href="{{ route('download_essay', ['fileName' => $user->essay]) }}">Download</a></td> --}}
             </tr>
