@@ -28,8 +28,6 @@
         <th>Email</th>
         <th>Konfirmasi</th>
         <th>Waktu Submit</th>
-        {{-- <th>Ijazah/Rapor</th>
-        <th>Essay</th> --}}
     </thead>
     <tbody>
         @foreach ($registed_user as $index => $user)
@@ -45,8 +43,6 @@
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->konfirmasi }}</td>
                 <td>{{ $user->created_at->isoFormat('dddd, D MMMM Y') }} {{ $user->created_at->format('g:i:s A') }}</td>
-                {{-- <td><a href="{{ route('download_ijazah', ['fileName' => $user->scan_ijazah]) }}">Download</a></td>
-                <td><a href="{{ route('download_essay', ['fileName' => $user->essay]) }}">Download</a></td> --}}
             </tr>
         @endforeach
     </tbody>
