@@ -44,7 +44,7 @@
                 <td>{{ $user->nomor_telp }}</td>
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->konfirmasi }}</td>
-                <td>{{ $user->created_at }}</td>
+                <td>{{ $user->created_at->isoFormat('dddd, D MMMM Y') }} {{ $user->created_at->format('g:i:s A') }}</td>
                 {{-- <td><a href="{{ route('download_ijazah', ['fileName' => $user->scan_ijazah]) }}">Download</a></td>
                 <td><a href="{{ route('download_essay', ['fileName' => $user->essay]) }}">Download</a></td> --}}
             </tr>
