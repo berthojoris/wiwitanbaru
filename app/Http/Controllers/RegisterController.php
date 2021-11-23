@@ -93,6 +93,7 @@ class RegisterController extends Controller
         $data['alamat'] = ucfirst($request->alamat);
         $data['email'] = strtolower($request->email);
         $data['konfirmasi'] = strtoupper($request->konfirmasi);
+        $data['jurusan_pendidikan'] = ucfirst($request->jurusan_pendidikan);
 
         // if($request->hasFile('scan_ijazah')) {
         //     $file = $request->file('scan_ijazah');

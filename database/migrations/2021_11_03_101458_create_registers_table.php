@@ -22,6 +22,7 @@ class CreateRegistersTable extends Migration
             $table->string('golongan_darah');
             $table->text('alamat');
             $table->string('pendidikan_terakhir');
+            $table->string('jurusan_pendidikan');
             $table->string('nomor_telp');
             $table->string('email');
             $table->string('konfirmasi');
