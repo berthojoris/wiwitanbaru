@@ -39,8 +39,8 @@
                 <td>{{ $user->tanggal_lahir }}</td>
                 <td>{{ $user->golongan_darah }}</td>
                 <td>{{ $user->alamat }}</td>
-                <td>{{ $user->pendidikan_terakhir }}</td>
                 <td>{{ $user->jurusan_pendidikan }}</td>
+                <td>{{ $user->pendidikan_terakhir }}</td>
                 <td>{{ $user->nomor_telp }}</td>
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->konfirmasi }}</td>

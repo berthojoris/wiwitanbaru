@@ -76,23 +76,23 @@
         </section>
 
         <section>
-            <label class="label">Pendidikan terakhir Keperawatan/Kebidanan <span class="requirement">*</span></label>
-            <div class="row">
-                <div class="col col-4">
-                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="SMA/SMK" @if(old('pendidikan_terakhir') == 'SMA/SMK') checked @endif><i></i>SMA/SMK</label>
-                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="D3/D4" @if(old('pendidikan_terakhir') == 'D3/D4') checked @endif><i></i>D3/D4</label>
-                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="S1" @if(old('pendidikan_terakhir') == 'S1') checked @endif><i></i>S1</label>
-                </div>
-            </div>
-        </section>
-
-        <section>
             <label class="label">Jurusan pendidikan <span class="requirement">*</span></label>
             <div class="row">
                 <div class="col col-4">
                     <label class="radio"><input type="radio" name="jurusan_pendidikan" value="Perawat" @if(old('jurusan_pendidikan') == 'Perawat') checked @endif><i></i>Perawat</label>
                     <label class="radio"><input type="radio" name="jurusan_pendidikan" value="Bidan" @if(old('jurusan_pendidikan') == 'Bidan') checked @endif><i></i>Bidan</label>
                     <label class="radio"><input type="radio" name="jurusan_pendidikan" value="Bukan perawat/bidan" @if(old('jurusan_pendidikan') == 'Bukan perawat/bidan') checked @endif><i></i>Bukan perawat/bidan</label>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <label class="label">Pendidikan terakhir Keperawatan/Kebidanan <span class="requirement">*</span></label>
+            <div class="row">
+                <div class="col col-4">
+                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="SMA/SMK" @if(old('pendidikan_terakhir') == 'SMA/SMK') checked @endif><i></i>SMA/SMK</label>
+                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="D3/D4" @if(old('pendidikan_terakhir') == 'D3/D4') checked @endif><i></i>D3/D4</label>
+                    <label class="radio"><input type="radio" name="pendidikan_terakhir" value="S1" @if(old('pendidikan_terakhir') == 'S1') checked @endif><i></i>S1</label>
                 </div>
             </div>
         </section>
