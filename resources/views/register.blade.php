@@ -130,6 +130,10 @@
             </div>
         </section>
 
+        <section>
+            <p style="font-size: 14px; font-weight: bold;"><span class="requirement">*</span> Pendaftar akan dihubungi via WA oleh admin untuk proses lebih lanjut</p>
+        </section>
+
         {{-- <section>
             <label class="label">Unggah scan Raport/Ijazah <span class="requirement">*</span></label>
             <label for="file" class="input input-file">
@@ -149,6 +153,7 @@
 
     <footer>
         {{-- <span id="info" style="font-size: 14px;">Call Centre | Whatsapp Centre Wiwitan Baru : <a href="https://wa.me/6281322892158?text=Hai%2C%20saya%20ingin%20mengetahui%20tetang%20wiwitan%20baru" target="_blank">081322892158</a></span> --}}
+        <span id="info" style="font-size: 14px;"></span>
         <span id="info" style="font-size: 14px;">Call Centre | Whatsapp Centre Wiwitan Baru : 081322892158</span>
         <input type="submit" value="Submit" class="button">
         <br><br>
