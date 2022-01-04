@@ -50,7 +50,7 @@ class RegisterRequest extends FormRequest
             'email.required' => 'Email tidak boleh kosong',
             'email.email' => 'Format email salah. Contoh : andi@gmail.com',
             'konfirmasi.required' => 'Persetujuan mengikuti pelatihan belum dipilih',
-            'bantuan_finansial.required' => 'Pilihan bantuan financial belum dipilih',
+            'bantuan_finansial.required' => 'Pilihan bantuan finansial belum dipilih',
             // 'scan_ijazah.required' => 'Scan ijazah belum diunggah',
             // 'essay.required' => 'Essay belum diunggah',
             // 'essay.mimes' => 'Essay hanya diijinkan file *.doc atau *.docx',
