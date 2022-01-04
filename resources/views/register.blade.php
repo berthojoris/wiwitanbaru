@@ -81,7 +81,6 @@
                 <div class="col col-4">
                     <label class="radio"><input type="radio" name="jurusan_pendidikan" value="Perawat" @if(old('jurusan_pendidikan') == 'Perawat') checked @endif><i></i>Perawat</label>
                     <label class="radio"><input type="radio" name="jurusan_pendidikan" value="Bidan" @if(old('jurusan_pendidikan') == 'Bidan') checked @endif><i></i>Bidan</label>
-                    <label class="radio"><input type="radio" name="jurusan_pendidikan" value="Bukan perawat/bidan" @if(old('jurusan_pendidikan') == 'Bukan perawat/bidan') checked @endif><i></i>Bukan perawat/bidan</label>
                 </div>
             </div>
         </section>
@@ -117,6 +116,16 @@
                 <div class="col col-4">
                     <label class="radio"><input type="radio" name="konfirmasi" value="Ya" @if(old('konfirmasi') == 'Ya') checked @endif><i></i>Ya</label>
                     <label class="radio"><input type="radio" name="konfirmasi" value="Tidak" @if(old('konfirmasi') == 'Tidak') checked @endif><i></i>Tidak</label>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <label class="label">Apakah anda membutuhkan bantuan secara finansial untuk mengikuti pelatihan? <span class="requirement">*</span></label>
+            <div class="row">
+                <div class="col col-4">
+                    <label class="radio"><input type="radio" name="bantuan_financial" value="Ya" @if(old('bantuan_financial') == 'Ya') checked @endif><i></i>Ya</label>
+                    <label class="radio"><input type="radio" name="bantuan_financial" value="Tidak" @if(old('bantuan_financial') == 'Tidak') checked @endif><i></i>Tidak</label>
                 </div>
             </div>
         </section>
