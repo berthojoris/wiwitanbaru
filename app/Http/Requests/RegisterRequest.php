@@ -28,7 +28,7 @@ class RegisterRequest extends FormRequest
             'alamat' => 'required',
             'email' => 'required|email',
             'konfirmasi' => 'required',
-            'bantuan_financial' => 'required',
+            'bantuan_finansial' => 'required',
             // 'scan_ijazah' => 'required|file|mimes:pdf|max:20480', // 20 mb
             // 'essay' => 'required|file|mimes:doc,docx|max:20480' // 20 mb
         ];
@@ -50,7 +50,7 @@ class RegisterRequest extends FormRequest
             'email.required' => 'Email tidak boleh kosong',
             'email.email' => 'Format email salah. Contoh : andi@gmail.com',
             'konfirmasi.required' => 'Persetujuan mengikuti pelatihan belum dipilih',
-            'bantuan_financial.required' => 'Pilihan bantuan financial belum dipilih',
+            'bantuan_finansial.required' => 'Pilihan bantuan financial belum dipilih',
             // 'scan_ijazah.required' => 'Scan ijazah belum diunggah',
             // 'essay.required' => 'Essay belum diunggah',
             // 'essay.mimes' => 'Essay hanya diijinkan file *.doc atau *.docx',

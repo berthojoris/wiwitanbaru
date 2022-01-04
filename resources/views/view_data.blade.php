@@ -28,6 +28,7 @@
         <th>No Telp</th>
         <th>Email</th>
         <th>Konfirmasi</th>
+        <th>Bantuan Finansial</th>
         <th>Waktu Submit</th>
     </thead>
     <tbody>
@@ -44,6 +45,7 @@
                 <td>{{ $user->nomor_telp }}</td>
                 <td>{{ $user->email }}</td>
                 <td>{{ $user->konfirmasi }}</td>
+                <td>{{ $user->bantuan_finansial }}</td>
                 <td>{{ $user->created_at->isoFormat('dddd, D MMMM Y') }} {{ $user->created_at->format('g:i:s A') }}</td>
             </tr>
         @endforeach
