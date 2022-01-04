@@ -131,7 +131,7 @@
         </section>
 
         <section>
-            <p style="font-size: 14px; font-weight: bold;"><span class="requirement">*</span> Pendaftar akan dihubungi via WA oleh admin untuk proses lebih lanjut</p>
+            <p style="font-size: 14px; font-weight: bold;"><span class="requirement">*</span> Pendaftar akan dihubungi oleh admin untuk proses lebih lanjut</p>
         </section>
 
         {{-- <section>
