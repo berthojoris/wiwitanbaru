@@ -12,7 +12,7 @@
 @section('content')
 <form method="POST" action="{{ route('register_submit') }}" enctype="multipart/form-data" class="sky-form">
     @csrf
-    <header>Registrasi Beasiswa Pelatihan Bahasa Jepang untuk jadi Perawat di Jepang dengan Gaji Besar <br> <h4 class="noted">Formulir calon peserta magang Angkatan 3 LPK WIWITAN BARU SUKABUMI khusus SMK/D3/D4/S1 KEPERAWATAN dan KEBIDANAN</h4></header>
+    <header>Registrasi Beasiswa Pelatihan Bahasa Jepang untuk jadi Caregiver di Jepang dengan Gaji Besar <br> <h4 class="noted">Formulir calon peserta magang Angkatan 3 LPK WIWITAN BARU SUKABUMI khusus SMK/D3/D4/S1 KEPERAWATAN dan KEBIDANAN</h4></header>
 
     <fieldset>
 
